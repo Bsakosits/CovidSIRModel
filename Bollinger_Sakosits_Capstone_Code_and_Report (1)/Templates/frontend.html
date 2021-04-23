@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<title>Covid Model Web App</title>
+</head>
+<body>
+	<form method="POST" action="/input">
+		Total time ticks (1 tick = 6 days): <input type="number" name="timeticks" value="30" required><br>
+		Is population in mandated quarantine from the start? <input type="checkbox" name="inQuar"><br>
+		At what percent of the population being sick does mandated quarantine come into effect? <input type="number" name="quarantineProp" value="50" required><br>
+		Percentage of people voluntarily isolating upon realizing they are sick <input type="number" name="isoProp" value="100" required><br>
+		Percentage of infected who are asymptomatic <input type="number" name="asymProp" value="40" required><br>
+		Percentage of people who consistently social distance <input type="number" name="socDistProp" value="64" required><br>
+		Percentage of people who consistently wear masks<input type="number" name="maskProp" value="59" required><br>
+		Percent chance that someone gets infected without wearing a mask or social distancing <input type="number" name="neitherProp" value="19" required><br>
+		Percent chance that someone gets infected while wearing a mask <input type="number" name="maskEncProp" value="13" required><br>
+		Percent chance that someone gets infected while social distancing<input type="number" name="socDistEncProp" value="17" required><br>
+		Percent chance that someone gets infected while both wearing a mask and social distancing <input type="number" name="bothProp" value="3" required><br>
+		Time ticks it takes infected to recover <input type="number" name="recTime" value="4" required><br>
+		<input type="submit" value="Submit">
+	</form>
+	<img src="{{ image1 }}"/>
+	<img src="{{ image2 }}"/><br>
+	<img src="{{ image3 }}"/>
+	<img src="{{ image4 }}"/><br>
+	<img src="{{ image5 }}"/>
+	<img src="{{ image6 }}"/>
+</body>
+</html>
